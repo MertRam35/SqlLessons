@@ -1,4 +1,4 @@
-public class test {
+public class assign2 {
 
     public static void main(String[] args) {
 
@@ -43,6 +43,5 @@ select first_name,last_name,e.department_id,department_name from employees e rig
 select first_name, last_name,e.department_id,department_name from employees e left join departments d on e.department_id = d.department_id;
 
 --11. Display all employee and their manager's names
-select employee_id, first_name, last_name, manager_id from employees;
 select e.first_name || ' ' || e.last_name as employee , m.first_name || ' '|| m.last_name as manager from employees e join employees m  on e.manager_id= m.employee_id;
  */
